@@ -1,0 +1,54 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-fg: #0f172a; /** Primary text color. Paired with color-bg, meets WCAG AA (4.5:1) for body text. */
+  --color-bg: #ffffff; /** Primary surface color: page content and card backgrounds. */
+  --color-bg-subtle: #f1f5f9; /** App shell background, used to set surfaces (cards, panels) apart from the canvas. */
+  --color-fg-muted: #475669; /** Secondary text: captions, timestamps, helper text. */
+  --color-fg-inverse: #ffffff; /** Text/icon color for use on filled, colored surfaces such as the primary button. */
+  --color-primary: #1d4ed8; /** Primary action color for buttons, links, and focus accents. */
+  --color-primary-hover: #1e40af; /** Hover/active state for primary-colored controls. */
+  --color-border: #e2e8f0; /** Default hairline border for cards, inputs, and dividers. */
+  --color-success: #15803d; /** Text/icon color for successful or completed states. */
+  --color-success-bg: #dcfce7; /** Background tint for success chips. */
+  --color-warning: #b45309; /** Text/icon color for at-risk or pending states. */
+  --color-warning-bg: #fef3c7; /** Background tint for warning chips. */
+  --color-danger: #b91c1c; /** Text/icon color for failed or blocked states. */
+  --color-danger-bg: #fee2e2; /** Background tint for danger chips. */
+  --space-1: 4px; /** Tightest spacing: icon-to-label gaps, chip internal padding. */
+  --space-2: 8px; /** Compact spacing: form control padding, stacked list items. */
+  --space-3: 12px; /** Default spacing: button padding, table cell padding. */
+  --space-4: 16px; /** Card padding and gaps between related components. */
+  --space-5: 24px; /** Gaps between distinct sections within a page. */
+  --space-6: 32px; /** Page-level margins and major layout gutters. */
+  --radius-sm: 4px; /** Chips, inputs, small controls. */
+  --radius-md: 6px; /** Buttons and medium controls. */
+  --radius-lg: 10px; /** Cards and panels. */
+  --border-width-sm: 1px; /** Default hairline border width. */
+  --font-size-xs: 11px; /** Chip labels and table column headers. */
+  --font-size-sm: 12px; /** Secondary/helper text. */
+  --font-size-md: 14px; /** Default body and control text for a data-dense console. */
+  --font-size-lg: 18px; /** Card titles and section headings. */
+  --font-size-xl: 22px; /** Page titles. */
+  --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; /** Default UI typeface. */
+  --font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; /** IDs, timestamps, and log output. */
+  --font-weight-regular: 400; /** Body text. */
+  --font-weight-medium: 500; /** Buttons, labels, table headers. */
+  --font-weight-semibold: 600; /** Card titles and page headings. */
+  --line-height-tight: 1.3; /** Headings. */
+  --line-height-normal: 1.5; /** Body copy. */
+  --button-primary-background: var(--color-primary); /** Primary button fill. */
+  --button-primary-background-hover: var(--color-primary-hover); /** Primary button fill on hover/active. */
+  --button-primary-foreground: var(--color-fg-inverse); /** Primary button label/icon color. */
+  --button-primary-radius: var(--radius-md);
+  --button-secondary-background: var(--color-bg); /** Secondary (outline) button fill. */
+  --button-secondary-foreground: var(--color-primary); /** Secondary button label/icon color. */
+  --button-secondary-border: var(--color-border); /** Secondary button outline color. */
+  --button-secondary-radius: var(--radius-md);
+  --card-default-background: var(--color-bg); /** Card surface color. */
+  --card-default-border: var(--color-border); /** Card outline color. */
+  --card-default-radius: var(--radius-lg);
+  --card-default-padding: var(--space-4);
+}

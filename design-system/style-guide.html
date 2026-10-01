@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Design System — Style Guide</title>
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="prototype-utils.css" />
+<style>
+  body { margin: 0; }
+  .sg-section { padding: var(--space-6); border-bottom: var(--border-width-sm) solid var(--color-border); }
+  .sg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: var(--space-4); }
+  .swatch { display: flex; flex-direction: column; gap: var(--space-2); }
+  .swatch-color { height: 56px; border-radius: var(--radius-sm); border: var(--border-width-sm) solid var(--color-border); }
+  .dim-bar { background: var(--color-primary); height: 12px; border-radius: var(--radius-sm); }
+  .sg-row { display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+  code { font-family: var(--font-family-mono); font-size: var(--font-size-xs); }
+</style>
+</head>
+<body class="page">
+
+  <section class="sg-section">
+    <h1 class="text-title">Design System Style Guide</h1>
+    <p class="text-muted">Tokens, components, and UI guidelines for review.</p>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Colors</h2>
+    <div class="sg-grid">
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-fg)"></div><code>color-fg</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-bg)"></div><code>color-bg</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-bg-subtle)"></div><code>color-bg-subtle</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-fg-muted)"></div><code>color-fg-muted</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-fg-inverse); border: 1px solid var(--color-border);"></div><code>color-fg-inverse</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-primary)"></div><code>color-primary</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-primary-hover)"></div><code>color-primary-hover</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-border)"></div><code>color-border</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-success)"></div><code>color-success</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-success-bg)"></div><code>color-success-bg</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-warning)"></div><code>color-warning</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-warning-bg)"></div><code>color-warning-bg</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-danger)"></div><code>color-danger</code></div>
+      <div class="swatch"><div class="swatch-color" style="background: var(--color-danger-bg)"></div><code>color-danger-bg</code></div>
+    </div>
+    <p class="text-body" style="margin-top: var(--space-4); color: var(--color-fg); background: var(--color-bg); padding: var(--space-3); border-radius: var(--radius-sm);">
+      color-fg on color-bg — body text contrast sample.
+    </p>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Spacing</h2>
+    <div class="stack">
+      <div class="sg-row"><div class="dim-bar" style="width: var(--space-1)"></div><code>space-1 — 4px</code></div>
+      <div class="sg-row"><div class="dim-bar" style="width: var(--space-2)"></div><code>space-2 — 8px</code></div>
+      <div class="sg-row"><div class="dim-bar" style="width: var(--space-3)"></div><code>space-3 — 12px</code></div>
+      <div class="sg-row"><div class="dim-bar" style="width: var(--space-4)"></div><code>space-4 — 16px</code></div>
+      <div class="sg-row"><div class="dim-bar" style="width: var(--space-5)"></div><code>space-5 — 24px</code></div>
+      <div class="sg-row"><div class="dim-bar" style="width: var(--space-6)"></div><code>space-6 — 32px</code></div>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Radii</h2>
+    <div class="sg-row">
+      <div class="swatch-color" style="width: 72px; background: var(--color-primary); border-radius: var(--radius-sm);"></div>
+      <code>radius-sm</code>
+      <div class="swatch-color" style="width: 72px; background: var(--color-primary); border-radius: var(--radius-md);"></div>
+      <code>radius-md</code>
+      <div class="swatch-color" style="width: 72px; background: var(--color-primary); border-radius: var(--radius-lg);"></div>
+      <code>radius-lg</code>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Type scale</h2>
+    <div class="stack">
+      <div style="font-size: var(--font-size-xs); font-family: var(--font-family-base);">font-size-xs — The quick brown fox</div>
+      <div style="font-size: var(--font-size-sm); font-family: var(--font-family-base);">font-size-sm — The quick brown fox</div>
+      <div style="font-size: var(--font-size-md); font-family: var(--font-family-base);">font-size-md — The quick brown fox</div>
+      <div style="font-size: var(--font-size-lg); font-family: var(--font-family-base);">font-size-lg — The quick brown fox</div>
+      <div style="font-size: var(--font-size-xl); font-family: var(--font-family-base);">font-size-xl — The quick brown fox</div>
+      <div class="text-mono">font-family-mono — job_7f3a2c / 2026-10-01T14:02:00Z</div>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Buttons</h2>
+    <div class="sg-row">
+      <button class="btn btn-primary">Run now</button>
+      <button class="btn btn-secondary">Cancel</button>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Chips</h2>
+    <div class="sg-row">
+      <span class="chip chip-success">Completed</span>
+      <span class="chip chip-warning">Pending</span>
+      <span class="chip chip-danger">Failed</span>
+      <span class="chip chip-neutral">Disabled</span>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Form controls</h2>
+    <div class="field" style="max-width: 320px;">
+      <label class="label" for="sg-input">Job name</label>
+      <input class="input" id="sg-input" type="text" placeholder="nightly-export" />
+    </div>
+    <div class="field" style="max-width: 320px; margin-top: var(--space-3);">
+      <label class="label" for="sg-select">Schedule</label>
+      <select class="select" id="sg-select">
+        <option>Every hour</option>
+        <option>Every day</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Card</h2>
+    <div class="card" style="max-width: 420px;">
+      <div class="card-header">
+        <span class="text-heading">nightly-export</span>
+        <span class="chip chip-success">Completed</span>
+      </div>
+      <p class="text-muted">Last run finished in 42s at 2026-10-01 03:00 UTC.</p>
+    </div>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-heading">Table</h2>
+    <table class="table">
+      <thead>
+        <tr><th>Job</th><th>Status</th><th>Last run</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>nightly-export</td><td><span class="chip chip-success">Completed</span></td><td class="text-mono">03:00 UTC</td></tr>
+        <tr><td>reindex-search</td><td><span class="chip chip-warning">Pending</span></td><td class="text-mono">—</td></tr>
+        <tr><td>billing-sync</td><td><span class="chip chip-danger">Failed</span></td><td class="text-mono">01:12 UTC</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="sg-section">
+    <h2 class="text-title">UI Guidelines</h2>
+
+    <h3 class="text-heading">Navigation &amp; information architecture</h3>
+    <p class="text-body">A persistent left sidebar lists the top-level sections (e.g. jobs, schedules, settings); there is no top bar, since operators spend whole sessions in one section and a sidebar keeps section-switching to a single click. Each section is a flat list or table, not nested further than one level, so operators can scan and jump without drilling through menus.</p>
+
+    <h3 class="text-heading">Layout &amp; density</h3>
+    <p class="text-body">Default to a data-dense layout: tables and lists over large illustrative cards, <code>font-size-sm</code>/<code>font-size-xs</code> for most in-table text, and <code>space-2</code>/<code>space-3</code> rather than <code>space-5</code>/<code>space-6</code> for internal gaps, because operators are scanning many rows of state at once, not reading long-form content. Pages do not need to adapt below ~1024px width, since this is an internal tool used on desktop monitors, not a mobile surface.</p>
+
+    <h3 class="text-heading">Component usage</h3>
+    <p class="text-body">Use <code>.table</code> for any list of more than a handful of same-shaped records (jobs, runs, logs) since it lets operators compare fields across rows. Use <code>.card</code> to group a single entity's details or a settings section, never for repeating list items, since repeating cards waste vertical space that a table uses efficiently. Use <code>.chip-success</code>/<code>.chip-warning</code>/<code>.chip-danger</code> for job/run status and <code>.chip-neutral</code> for inactive or informational tags, so status is recognizable by color before the label is read. Use <code>.btn-primary</code> once per view for the one primary action (e.g. "Run now"); every other action is <code>.btn-secondary</code>, so operators always know the default action at a glance.</p>
+
+    <h3 class="text-heading">Theme</h3>
+    <p class="text-body">Light theme only for now. The product is used in bright, shared office/ops environments where a dark surface would reduce the legibility operators depend on for fast scanning; revisit if remote/on-call usage grows.</p>
+
+    <h3 class="text-heading">Voice &amp; tone</h3>
+    <p class="text-body">Copy is short, literal, and system-status-oriented ("Run failed at 14:02", not "Oops, something went wrong"), because operators need to act on precise state, not be reassured.</p>
+  </section>
+
+</body>
+</html>
